@@ -2,7 +2,8 @@ import { TfiMenu } from "react-icons/tfi";
 import { FaOpencart } from "react-icons/fa6";
 import { CiSearch } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
-import shamme from "../assets/recyLogo.jpg";
+import shamme from "../assets/logo/shammiLogo.png";
+import reciMukk from "../assets/logo/recymukkLogo.png";
 const Home = () => {
   return (
     <div>
@@ -11,7 +12,11 @@ const Home = () => {
           <div className="header-menu">
             <TfiMenu />
           </div>
+          <div className="recy-logo-all">
+
+          <img className="header-recy-logo" src={reciMukk} alt="" />
           <div className="header-logo">recymukk.in</div>
+          </div>
           <div className="header-icons">
             <CiUser />
             <CiSearch />
@@ -31,7 +36,7 @@ const Home = () => {
             <h3>BUNDLE</h3>
           </div>
           <div>
-            <button  className="banner-button">Contact for service</button>
+            <button className="banner-button">Contact for service</button>
           </div>
         </div>
         <div>

@@ -1,7 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family:"Montserrat", sans-serif; 
+  font-family: "Montserrat", sans-serif;
 }
 .header {
   width: 100dvw;
@@ -21,7 +21,21 @@
   justify-content: space-evenly;
 }
 .header-logo {
-  margin-left: 110px;
+  font-weight: 900;
+  font-size: 14px;
+  color: rgba(38, 38, 36, 0.8);
+  /* margin-left: -250px; */
+}
+.header-recy-logo{
+    height: 25px;
+    /* margin-left: 200px; */
+   
+}
+.recy-logo-all{
+    display: flex;
+    /* text-align: center; */
+    /* justify-content: center; */
+    align-items: center;
 }
 .header-menu {
   margin-left: 20px;
@@ -63,10 +77,10 @@
   font-size: 34px;
 }
 .banner-button {
-    height: 40px;
-    font-size: 20px;
-    font-weight: 400;
-    border-radius: 10px;
-    border: none;
-    padding: 10px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
 }
