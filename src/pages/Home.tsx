@@ -1,7 +1,7 @@
 import { TfiMenu } from "react-icons/tfi";
-import { FaOpencart } from "react-icons/fa6";
-import { CiSearch } from "react-icons/ci";
-import { CiUser } from "react-icons/ci";
+// import { FaOpencart } from "react-icons/fa6";
+// import { CiSearch } from "react-icons/ci";
+// import { CiUser } from "react-icons/ci";
 import shamme from "../assets/logo/shammiLogo.png";
 import reciMukk from "../assets/logo/recymukkLogo.png";
 import samsungLogo from "../assets/mobileLogos/samsungLogo.jpg";
@@ -13,12 +13,57 @@ import panasonicLogo from "../assets/mobileLogos/panasonicLogo.jpg";
 import oppoLogo from "../assets/mobileLogos/oppoLogo.jpg";
 import vivoLogo from "../assets/mobileLogos/vivoLogo.jpg";
 import realmeLogo from "../assets/mobileLogos/realmeLogo.jpg";
-import cryinggirlLogo from "../assets/logo/cryinggirlLogo.png";
+
 interface Logo {
   default: string;
 }
 
 const logoArray: Logo[] = [
+  { default: samsungLogo },
+  { default: realmeLogo },
+  { default: panasonicLogo },
+  { default: itelLogo },
+  { default: vivoLogo },
+  { default: oppoLogo },
+  { default: iphoneLogo },
+  { default: miLogo },
+  { default: nokiaLog },
+  { default: samsungLogo },
+  { default: realmeLogo },
+  { default: panasonicLogo },
+  { default: itelLogo },
+  { default: vivoLogo },
+  { default: oppoLogo },
+  { default: iphoneLogo },
+  { default: miLogo },
+  { default: nokiaLog },
+  { default: samsungLogo },
+  { default: realmeLogo },
+  { default: panasonicLogo },
+  { default: itelLogo },
+  { default: vivoLogo },
+  { default: oppoLogo },
+  { default: iphoneLogo },
+  { default: miLogo },
+  { default: nokiaLog },
+  { default: samsungLogo },
+  { default: realmeLogo },
+  { default: panasonicLogo },
+  { default: itelLogo },
+  { default: vivoLogo },
+  { default: oppoLogo },
+  { default: iphoneLogo },
+  { default: miLogo },
+  { default: nokiaLog },
+  { default: samsungLogo },
+  { default: realmeLogo },
+  { default: panasonicLogo },
+  { default: itelLogo },
+  { default: vivoLogo },
+  { default: oppoLogo },
+  { default: iphoneLogo },
+  { default: miLogo },
+  { default: nokiaLog },
   { default: samsungLogo },
   { default: realmeLogo },
   { default: panasonicLogo },
@@ -42,9 +87,10 @@ const Home = () => {
             <div className="header-logo">recymukk.in</div>
           </div>
           <div className="header-icons">
-            <CiUser />
-            <CiSearch />
-            <FaOpencart />
+            {/* <CiUser /> */}
+            {/* <CiSearch />
+            <FaOpencart /> */}
+            <button className="call-button blink_me">Contact now</button>
           </div>
         </div>
       </header>
@@ -59,8 +105,10 @@ const Home = () => {
             </h2>
           </div>
           <div className="banner-header3">
-            <h3 style={{fontSize:"30px",fontStyle:"italic"}}>വിഷമിക്കണ്ട 😉</h3>
-            <button className="banner-button">Click for service</button>{" "}
+            <h3 style={{ fontSize: "30px", fontStyle: "italic" }}>
+              വിഷമിക്കണ്ട 😉
+            </h3>
+            <button className="banner-button blink_me">Click for service</button>{" "}
             <div></div>
           </div>
         </div>
@@ -70,18 +118,31 @@ const Home = () => {
       </section>
 
       <section className="sliding-banner">
-        <div className="sliding-banner-content">
+      <div className="sliding-banner-content">
           <h2 className="sliding-banner-header1">Fast and Quality Service</h2>
           <h4 className="sliding-banner-header2">
             service available for all brands
           </h4>
         </div>
-        <div className="sliding-banner-mainimgdiv">
+      <div className="slider">
+        <div className="slide-track ">
           {logoArray.map((value, index) => (
-            <div className="sliding-banner-imgdiv" key={index}>
+            <div key={index} className="slide">
               <img className="sliding-banner-img" src={value.default} alt="" />
             </div>
           ))}
+        </div>
+      </div>
+      </section>
+      <section className="detail-section">
+        <div className="detail-section-product1">
+
+        </div>
+        <div className="detail-section-product1">
+
+        </div>
+        <div className="detail-section-product1">
+
         </div>
       </section>
     </div>
