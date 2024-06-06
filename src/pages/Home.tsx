@@ -13,7 +13,11 @@ import panasonicLogo from "../assets/mobileLogos/panasonicLogo.jpg";
 import oppoLogo from "../assets/mobileLogos/oppoLogo.jpg";
 import vivoLogo from "../assets/mobileLogos/vivoLogo.jpg";
 import realmeLogo from "../assets/mobileLogos/realmeLogo.jpg";
-
+import cryingGirl from "../assets/logo/cryinggirlLogo.png";
+// import acceries from "../assets/offerSection/acceries.png";
+import delivery from "../assets/offerSection/delivery.png";
+import freee from "../assets/offerSection/Freee.png";
+import headsetOffer from "../assets/offerSection/headsetoffer.png";
 interface Logo {
   default: string;
 }
@@ -90,7 +94,7 @@ const Home = () => {
             {/* <CiUser /> */}
             {/* <CiSearch />
             <FaOpencart /> */}
-            <button className="call-button blink_me">Contact now</button>
+            <button className="call-button blink_me2">Contact now</button>
           </div>
         </div>
       </header>
@@ -108,7 +112,9 @@ const Home = () => {
             <h3 style={{ fontSize: "30px", fontStyle: "italic" }}>
               വിഷമിക്കണ്ട 😉
             </h3>
-            <button className="banner-button blink_me">Click for service</button>{" "}
+            <button className="banner-button blink_me">
+              Click for service
+            </button>{" "}
             <div></div>
           </div>
         </div>
@@ -118,31 +124,71 @@ const Home = () => {
       </section>
 
       <section className="sliding-banner">
-      <div className="sliding-banner-content">
+        <div className="sliding-banner-content">
           <h2 className="sliding-banner-header1">Fast and Quality Service</h2>
           <h4 className="sliding-banner-header2">
             service available for all brands
           </h4>
         </div>
-      <div className="slider">
-        <div className="slide-track ">
-          {logoArray.map((value, index) => (
-            <div key={index} className="slide">
-              <img className="sliding-banner-img" src={value.default} alt="" />
-            </div>
-          ))}
+        <div className="slider">
+          <div className="slide-track ">
+            {logoArray.map((value, index) => (
+              <div key={index} className="slide">
+                <img
+                  className="sliding-banner-img"
+                  src={value.default}
+                  alt=""
+                />
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
       </section>
       <section className="detail-section">
         <div className="detail-section-product1">
-
+          <h2 className="offer-content1 blink_me" style={{ color: "red" }}>
+            free pickup and delivery
+          </h2>
+          <img className="offer-image" src={delivery} alt="" />
+          <div className="offer-imagediv">
+            <h1 className="offer-content1">
+              ഒറ്റ DIAL മതി Technician വീടിനു മുന്നിൽ ....!
+            </h1>
+          </div>
         </div>
-        <div className="detail-section-product1">
-
+        <div
+          style={{
+            width: "30vw",
+            backgroundColor: "rgba(100, 112, 188, 255)",
+            height: "60vh",
+            borderRadius: "10px",
+            color:"white",
+            display:"flex",
+            flexDirection:"column",
+            textAlign:"center",
+            justifyContent:'center'
+          }}
+        >
+          <img style={{ height: "30vh",width:"20vw" }} src={cryingGirl} alt="" />
+          <h2>
+            Displays start from <h1 style={{display:"inline",color:"yellow"}}>₹ 1499/-</h1>
+          </h2>
+          <h1> <span style={{fontSize:"5vh",color:"yellow"}}>3</span> Months warranty <span style={{color:"yellow",fontSize:"3vh"}}>(for selected models)</span> </h1>
         </div>
-        <div className="detail-section-product1">
-
+        <div className="detail-section-product2">
+          <div style={{ display: "flex" }}>
+            <img className="offer-image2" src={freee} alt="" />
+            <img
+              style={{ height: "30vh", marginLeft: "-20px", width: "20vw" }}
+              src={headsetOffer}
+              alt=""
+            />
+          </div>
+          <div className="offer-imagediv">
+            <h1 className="offer-content2">
+              HEADSET WORTH -299/- TEMPARED WORTH-299/- MOBILE CASE WORTH -299/-
+            </h1>
+          </div>
         </div>
       </section>
     </div>
