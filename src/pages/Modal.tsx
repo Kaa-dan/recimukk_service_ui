@@ -11,7 +11,7 @@ const customStyles: Modal.Styles = {
     right: "auto",
     bottom: "auto",
     marginRight: "-50%",
-    height: "60vh",
+    height: "70vh",
     width: "60vw",
     overflow: "hidden",
     transform: "translate(-50%, -50%)",
@@ -51,7 +51,7 @@ const ModalComponent: React.FC = () => {
       const timer = setTimeout(() => {
         setIsOpen(true);
         setHasOpenedAutomatically(true);
-      }, 2000);
+      }, 4000);
 
       return () => clearTimeout(timer); // Clean up the timeout on component unmount
     }
@@ -77,7 +77,7 @@ const ModalComponent: React.FC = () => {
         <div
           style={{
             textAlign: "center",
-            backgroundColor: "black",
+            backgroundColor: "green",
             border: "none",
             display: "flex",
             flexDirection: "column",
@@ -88,12 +88,17 @@ const ModalComponent: React.FC = () => {
               fontSize: "3vh",
               fontWeight: "bold",
               color: "yellow",
-              padding:"15px"
-             
+              padding: "15px",
+              textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)" 
             }}
-           
           >
             <span>Anniversary Offer</span>
+            {/* <h1
+              style={{ fontSize: "4vh", color: "orange", fontWeight: "bold",textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)"  }}
+            >
+              {" "} 
+              Call 8075391294
+            </h1> */}
           </div>
           <div style={{ display: "flex" }}>
             {/* <img style={{ height: "35vh" }} src={limitedOffer} alt="" />
@@ -124,12 +129,32 @@ const ModalComponent: React.FC = () => {
 
             <div style={{ display: "flex", flexDirection: "column" }}>
               <img
-                style={{ height: "35vh", width: "30vw" }}
+                style={{
+                  height: "35vh",
+                  width: "30vw",
+                  boxShadow: "10px 10px 20px rgba(0, 0, 0, 0.5)",
+                }}
                 src={shoeImage}
                 alt=""
               />
-              <h2 style={{ color: "grey" ,fontSize:"3vh",fontWeight:"bolder"}}>അന്നേ ദിവസങ്ങളിൽ നേടൂ</h2>
-              <span style={{ color: "grey",fontSize:"2vh",fontWeight:"bold" }}>
+              <h2
+                style={{
+                  color: "yellow",
+                  fontSize: "3vh",
+                  fontWeight: "bolder",
+                  textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
+                }}
+              >
+                അന്നേ ദിവസങ്ങളിൽ നേടൂ
+              </h2>
+              <span
+                style={{
+                  color: "yellow",
+                  fontSize: "2vh",
+                  fontWeight: "bold",
+                  textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
+                }}
+              >
                 1 രൂപക്ക് Tshirt, Shoes, Flip, etc........
               </span>
             </div>
