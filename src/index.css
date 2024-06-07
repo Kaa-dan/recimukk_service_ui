@@ -21,7 +21,7 @@
   border: none;
   padding: 6px;
   width: 20vw;
-  
+
   border-radius: 5px;
   font-weight: bold;
   box-shadow: 0px 5px 5px rgba(11, 11, 11, 0.3);
@@ -211,15 +211,14 @@
   }
 } */
 .blink_me2 {
-    animation: blinker 1s linear infinite;
-  
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0.4;
+    font-size: 2vh;
   }
-  @keyframes blinker {
-    50% {
-      opacity: 0.4;
-      font-size: 2vh;
-    }
-  }
+}
 
 .detail-section {
   display: flex;
@@ -227,7 +226,7 @@
   justify-content: space-around;
   /* margin-top: 50px; */
   height: 80vh;
-  background-color:rgba(196, 206, 232, 255);
+  background-color: rgba(196, 206, 232, 255);
   flex-wrap: wrap;
 }
 .detail-section-product1 {
@@ -246,103 +245,99 @@
   width: 30vw;
   /* background-color: rgba(255, 138, 157, 0.1); */
   /* background-color: rgba(196, 206, 232, 0.3); */
-  background-color:  rgb(242, 242, 136);
+  background-color: rgb(242, 242, 136);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   /* justify-content: space-between; */
-  
 }
 
 .offer-image {
   height: 40vh;
   transform: rotate(-30deg);
 }
-.offer-image2{
-    height: 20vh;
-    width: 20vw;
-    transform: rotate(-40deg);
-    margin-left: -5vw;
+.offer-image2 {
+  height: 20vh;
+  width: 20vw;
+  transform: rotate(-40deg);
+  margin-left: -5vw;
 }
 .offer-content1 {
-    font-weight: 900;
-    font-size: 3vh;
-    color: rgba(83, 112, 188, 255);
-    text-align: center;
+  font-weight: 900;
+  font-size: 3vh;
+  color: rgba(83, 112, 188, 255);
+  text-align: center;
 }
 .offer-content2 {
-    font-weight: 900;
-    font-size: 3vh;
-    color: rgba(83, 112, 188, 255);
-    text-align: center;
+  font-weight: 900;
+  font-size: 3vh;
+  color: rgba(83, 112, 188, 255);
+  text-align: center;
 }
 
-
-.clothing-section{
-display: flex;
-flex-direction: column;
+.clothing-section {
+  display: flex;
+  flex-direction: column;
 }
 
-.clothing-section-content{
-    display: flex;
-    height: 20vh;
-    color:  rgba(83, 112, 188, 255);
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+.clothing-section-content {
+  display: flex;
+  height: 20vh;
+  color: rgba(83, 112, 188, 255);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
-
 
 /* secondslider */
 
 .slider2 {
-    height: 50vh;
-    margin: auto;
-    position: relative;
-    width: 100%;
-    display: grid;
-    place-items: center;
-    /* background-color: rgba(196, 206, 232, 255); */
-    overflow: hidden;
+  height: 50vh;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  /* background-color: rgba(196, 206, 232, 255); */
+  overflow: hidden;
+}
+.slide-track2 {
+  /* margin-top: -150px; */
+  display: flex;
+  width: calc(250px * 18);
+  animation: scroll 30s linear infinite;
+}
+.slide-track2:hover {
+  animation-play-state: paused;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  .slide-track2 {
-    /* margin-top: -150px; */
-    display: flex;
-    width: calc(250px * 18);
-    animation: scroll 30s linear infinite;
+  100% {
+    transform: translateX(calc(-250px * 9));
   }
-  .slide-track2:hover {
-    animation-play-state: paused;
-  }
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-250px * 9));
-    }
-  }
-  .slide2 {
-    width: 40vw;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    perspective: 100px;
-  }
-  .sliding-banner-img2 {
-    width: 50vw;
-    height: 50vh;
-    transition: transform 1s;
-    border-radius: 10px;
-  }
-  
-  .sliding-banner-img2:hover {
-    transform: translateZ(20px);
-  }
-  
+}
+.slide2 {
+  /* width: 40vw;
+  height: 50vh; */
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+.sliding-banner-img2 {
+  width:30vw;
+  height: 50vh;
+  transition: transform 1s;
+  border-radius: 10px;
+}
 
+.sliding-banner-img2:hover {
+  transform: translateZ(20px);
+}
 
 .slider::before,
 .slider::after {
@@ -362,4 +357,14 @@ flex-direction: column;
   right: 0;
   top: 0;
   transform: rotateZ(180deg);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  height: 30vh;
+  align-items: center;
+  background-color: black;
+  color: white;
+  margin-top: 10vh;
 }

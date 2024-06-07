@@ -16,10 +16,15 @@ import delivery from "../assets/offerSection/delivery.png";
 import freee from "../assets/offerSection/Freee.png";
 import headsetOffer from "../assets/offerSection/headsetoffer.png";
 
-import recishop1 from "../assets/shopimage/recyshop1.jpg";
 import recishop2 from "../assets/shopimage/recyshop2.jpg";
-import recishop3 from "../assets/shopimage/recyshop3.jpg";
 
+import recishop4 from "../assets/shopimage/recyshop4.jpg";
+import recishop5 from "../assets/shopimage/recishop5.jpg";
+import recishop6 from "../assets/shopimage/recishop6.jpg";
+import { FaWhatsappSquare } from "react-icons/fa";
+import { GrInstagram } from "react-icons/gr";
+import { CiLocationOn } from "react-icons/ci";
+import ModalComponent from "./Modal";
 interface Logo {
   default: string;
 }
@@ -81,36 +86,61 @@ const logoArray: Logo[] = [
   { default: nokiaLog },
 ];
 const shopArray: Logo[] = [
-  { default: recishop1 },
+  { default: recishop4 },
+  { default: recishop5 },
+  { default: recishop6 },
+
   { default: recishop2 },
-  { default: recishop3 },
-  { default: recishop1 },
+  { default: recishop4 },
+  { default: recishop5 },
+  { default: recishop6 },
+
   { default: recishop2 },
-  { default: recishop3 },
-  { default: recishop1 },
+  { default: recishop4 },
+  { default: recishop5 },
+  { default: recishop6 },
+
   { default: recishop2 },
-  { default: recishop3 },
-  { default: recishop1 },
+  { default: recishop4 },
+  { default: recishop5 },
+  { default: recishop6 },
+
   { default: recishop2 },
-  { default: recishop3 },
-  { default: recishop1 },
+  { default: recishop4 },
+  { default: recishop5 },
+  { default: recishop6 },
+
   { default: recishop2 },
-  { default: recishop3 },
-  { default: recishop1 },
+  { default: recishop4 },
+  { default: recishop5 },
+  { default: recishop6 },
+
   { default: recishop2 },
-  { default: recishop3 },
-  { default: recishop1 },
+  { default: recishop4 },
+  { default: recishop5 },
+  { default: recishop6 },
+
   { default: recishop2 },
-  { default: recishop3 },
-  { default: recishop1 },
+  { default: recishop4 },
+  { default: recishop5 },
+  { default: recishop6 },
+
   { default: recishop2 },
-  { default: recishop3 },
-  { default: recishop1 },
+  { default: recishop4 },
+  { default: recishop5 },
+  { default: recishop6 },
+
   { default: recishop2 },
-  { default: recishop3 },
-  { default: recishop1 },
+  { default: recishop4 },
+  { default: recishop5 },
+  { default: recishop6 },
+
   { default: recishop2 },
-  { default: recishop3 },
+  { default: recishop4 },
+  { default: recishop5 },
+  { default: recishop6 },
+
+  { default: recishop2 },
 ];
 const Home = () => {
   return (
@@ -180,7 +210,7 @@ const Home = () => {
       </section>
       <section className="detail-section">
         <div className="detail-section-product1">
-          <h2 className="offer-content1 blink_me" style={{ color: "red" }}>
+          <h2 className="offer-content1 " style={{ color: "red" }}>
             free pickup and delivery
           </h2>
           <img className="offer-image" src={delivery} alt="" />
@@ -256,6 +286,58 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <footer className="footer">
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            fontWeight: "bolder",
+          }}
+        >
+          <h2>shop</h2>
+          <div style={{ marginTop: "10px", color: "yellow" }}>
+            <span>Karamana</span>
+            <button style={{ borderRadius: "10px" }}>
+              {" "}
+              <CiLocationOn />
+              Location
+            </button>
+          </div>
+          <div style={{ marginTop: "10px", color: "yellow" }}>
+            <span>Attukal</span>
+            <button style={{ borderRadius: "10px" }}>
+              {" "}
+              <CiLocationOn />
+              Location
+            </button>
+          </div>
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            fontWeight: "bolder",
+          }}
+        >
+          <h2>Contact</h2>
+          <span style={{ marginTop: "10px" }}> 7907444987</span>
+
+          <span style={{ marginTop: "10px", color: "green" }}>
+            <FaWhatsappSquare />
+            <span> Whatsapp</span>
+          </span>
+
+          <span style={{ marginTop: "10px", color: "RGB(193, 53, 132)" }}>
+            <GrInstagram /> Instagram
+          </span>
+        </div>
+
+        <div>
+          <span>© 2024, Recy_mukk.</span>
+        </div>
+      </footer>
+      <ModalComponent />
     </div>
   );
 };
