@@ -279,6 +279,70 @@
 }
 
 
+.clothing-section{
+display: flex;
+flex-direction: column;
+}
+
+.clothing-section-content{
+    display: flex;
+    height: 20vh;
+    color:  rgba(83, 112, 188, 255);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* secondslider */
+
+.slider2 {
+    height: 50vh;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    /* background-color: rgba(196, 206, 232, 255); */
+    overflow: hidden;
+  }
+  .slide-track2 {
+    /* margin-top: -150px; */
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 30s linear infinite;
+  }
+  .slide-track2:hover {
+    animation-play-state: paused;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 9));
+    }
+  }
+  .slide2 {
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+  }
+  .sliding-banner-img2 {
+    width: 50vw;
+    height: 50vh;
+    transition: transform 1s;
+    border-radius: 10px;
+  }
+  
+  .sliding-banner-img2:hover {
+    transform: translateZ(20px);
+  }
+  
+
 
 .slider::before,
 .slider::after {

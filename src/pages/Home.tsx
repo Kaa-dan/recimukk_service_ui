@@ -1,7 +1,4 @@
 import { TfiMenu } from "react-icons/tfi";
-// import { FaOpencart } from "react-icons/fa6";
-// import { CiSearch } from "react-icons/ci";
-// import { CiUser } from "react-icons/ci";
 import shamme from "../assets/logo/shammiLogo.png";
 import reciMukk from "../assets/logo/recymukkLogo.png";
 import samsungLogo from "../assets/mobileLogos/samsungLogo.jpg";
@@ -18,6 +15,11 @@ import cryingGirl from "../assets/logo/cryinggirlLogo.png";
 import delivery from "../assets/offerSection/delivery.png";
 import freee from "../assets/offerSection/Freee.png";
 import headsetOffer from "../assets/offerSection/headsetoffer.png";
+
+import recishop1 from "../assets/shopimage/recyshop1.jpg";
+import recishop2 from "../assets/shopimage/recyshop2.jpg";
+import recishop3 from "../assets/shopimage/recyshop3.jpg";
+
 interface Logo {
   default: string;
 }
@@ -77,6 +79,38 @@ const logoArray: Logo[] = [
   { default: iphoneLogo },
   { default: miLogo },
   { default: nokiaLog },
+];
+const shopArray: Logo[] = [
+  { default: recishop1 },
+  { default: recishop2 },
+  { default: recishop3 },
+  { default: recishop1 },
+  { default: recishop2 },
+  { default: recishop3 },
+  { default: recishop1 },
+  { default: recishop2 },
+  { default: recishop3 },
+  { default: recishop1 },
+  { default: recishop2 },
+  { default: recishop3 },
+  { default: recishop1 },
+  { default: recishop2 },
+  { default: recishop3 },
+  { default: recishop1 },
+  { default: recishop2 },
+  { default: recishop3 },
+  { default: recishop1 },
+  { default: recishop2 },
+  { default: recishop3 },
+  { default: recishop1 },
+  { default: recishop2 },
+  { default: recishop3 },
+  { default: recishop1 },
+  { default: recishop2 },
+  { default: recishop3 },
+  { default: recishop1 },
+  { default: recishop2 },
+  { default: recishop3 },
 ];
 const Home = () => {
   return (
@@ -162,18 +196,30 @@ const Home = () => {
             backgroundColor: "rgba(100, 112, 188, 255)",
             height: "60vh",
             borderRadius: "10px",
-            color:"white",
-            display:"flex",
-            flexDirection:"column",
-            textAlign:"center",
-            justifyContent:'center'
+            color: "white",
+            display: "flex",
+            flexDirection: "column",
+            textAlign: "center",
+            justifyContent: "center",
           }}
         >
-          <img style={{ height: "30vh",width:"20vw" }} src={cryingGirl} alt="" />
+          <img
+            style={{ height: "30vh", width: "20vw" }}
+            src={cryingGirl}
+            alt=""
+          />
           <h2>
-            Displays start from <h1 style={{display:"inline",color:"yellow"}}>₹ 1499/-</h1>
+            Displays start from{" "}
+            <h1 style={{ display: "inline", color: "yellow" }}>₹ 1499/-</h1>
           </h2>
-          <h1> <span style={{fontSize:"5vh",color:"yellow"}}>3</span> Months warranty <span style={{color:"yellow",fontSize:"3vh"}}>(for selected models)</span> </h1>
+          <h1>
+            {" "}
+            <span style={{ fontSize: "5vh", color: "yellow" }}>3</span> Months
+            warranty{" "}
+            <span style={{ color: "yellow", fontSize: "3vh" }}>
+              (for selected models)
+            </span>{" "}
+          </h1>
         </div>
         <div className="detail-section-product2">
           <div style={{ display: "flex" }}>
@@ -188,6 +234,25 @@ const Home = () => {
             <h1 className="offer-content2">
               HEADSET WORTH -299/- TEMPARED WORTH-299/- MOBILE CASE WORTH -299/-
             </h1>
+          </div>
+        </div>
+      </section>
+
+      <section className="clothing-section">
+        <div className="clothing-section-content">
+          <h1 style={{ fontStyle: "bold", fontSize: "9vh" }}>Our Products</h1>
+        </div>
+        <div className="slider2">
+          <div className="slide-track2 ">
+            {shopArray.map((value, index) => (
+              <div key={index} className="slide2">
+                <img
+                  className="sliding-banner-img2"
+                  src={value.default}
+                  alt=""
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
