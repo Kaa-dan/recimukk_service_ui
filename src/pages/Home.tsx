@@ -85,6 +85,7 @@ const logoArray: Logo[] = [
   { default: miLogo },
   { default: nokiaLog },
 ];
+
 const shopArray: Logo[] = [
   { default: recishop4 },
   { default: recishop5 },
@@ -173,13 +174,10 @@ const Home = () => {
             </h2>
           </div>
           <div className="banner-header3">
-            <h3 style={{ fontSize: "30px", fontStyle: "italic" }}>
-              വിഷമിക്കണ്ട 😉
-            </h3>
+            <h3 className="vishamikanda">വിഷമിക്കണ്ട 😉</h3>
             <button className="banner-button blink_me">
               Click for service
             </button>{" "}
-            <div></div>
           </div>
         </div>
         <div>
@@ -220,45 +218,23 @@ const Home = () => {
             </h1>
           </div>
         </div>
-        <div
-          style={{
-            width: "30vw",
-            backgroundColor: "rgba(100, 112, 188, 255)",
-            height: "60vh",
-            borderRadius: "10px",
-            color: "white",
-            display: "flex",
-            flexDirection: "column",
-            textAlign: "center",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            style={{ height: "30vh", width: "20vw" }}
-            src={cryingGirl}
-            alt=""
-          />
-          <h2>
+        <div className="detail-section-product3">
+          <img className="offer-image-3" src={cryingGirl} alt="" />
+          <h2 className="section-font-2">
             Displays start from{" "}
             <h1 style={{ display: "inline", color: "yellow" }}>₹ 1499/-</h1>
           </h2>
-          <h1>
+          <h1 className="section-font-3">
             {" "}
             <span style={{ fontSize: "5vh", color: "yellow" }}>3</span> Months
             warranty{" "}
-            <span style={{ color: "yellow", fontSize: "3vh" }}>
-              (for selected models)
-            </span>{" "}
+            <span className="section-font-4">(for selected models)</span>{" "}
           </h1>
         </div>
         <div className="detail-section-product2">
-          <div style={{ display: "flex" }}>
+          <div className="detail-section-product2-div">
             <img className="offer-image2" src={freee} alt="" />
-            <img
-              style={{ height: "30vh", marginLeft: "-20px", width: "20vw" }}
-              src={headsetOffer}
-              alt=""
-            />
+            <img className="offer-image33" src={headsetOffer} alt="" />
           </div>
           <div className="offer-imagediv">
             <h1 className="offer-content2">
@@ -270,7 +246,7 @@ const Home = () => {
 
       <section className="clothing-section">
         <div className="clothing-section-content">
-          <h1 style={{ fontStyle: "bold", fontSize: "9vh" }}>Our Products</h1>
+          <h1 className="shop-header">Our Products</h1>
         </div>
         <div className="slider2">
           <div className="slide-track2 ">
@@ -287,25 +263,19 @@ const Home = () => {
         </div>
       </section>
       <footer className="footer">
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            fontWeight: "bolder",
-          }}
-        >
+        <div className="footer-div-style">
           <h2>shop</h2>
-          <div style={{ marginTop: "10px", color: "yellow" }}>
+          <div className="shopfont-style">
             <span>Karamana</span>
-            <button style={{ borderRadius: "10px" }}>
+            <button className="location-button">
               {" "}
               <CiLocationOn />
               Location
             </button>
           </div>
-          <div style={{ marginTop: "10px", color: "yellow" }}>
-            <span>Attukal</span>
-            <button style={{ borderRadius: "10px" }}>
+          <div className="shopfont-style">
+            <span>Attukal {" "}</span>
+            <button className="location-button">
               {" "}
               <CiLocationOn />
               Location
@@ -314,21 +284,18 @@ const Home = () => {
         </div>
 
         <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            fontWeight: "bolder",
-          }}
+        className="contact-details"
+        
         >
           <h2>Contact</h2>
-          <span style={{ marginTop: "10px" }}> 7907444987</span>
+          <span> 7907444987</span>
 
-          <span style={{ marginTop: "10px", color: "green" }}>
+          <span className="whatsapplogo" >
             <FaWhatsappSquare />
             <span> Whatsapp</span>
           </span>
 
-          <span style={{ marginTop: "10px", color: "RGB(193, 53, 132)" }}>
+          <span className="instagramLogo" >
             <GrInstagram /> Instagram
           </span>
         </div>

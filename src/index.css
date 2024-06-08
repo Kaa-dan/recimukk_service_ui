@@ -224,10 +224,9 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* margin-top: 50px; */
+
   height: 80vh;
   background-color: rgba(196, 206, 232, 255);
-  flex-wrap: wrap;
 }
 .detail-section-product1 {
   height: 60vh;
@@ -251,6 +250,29 @@
   flex-direction: column;
   justify-content: space-around;
   /* justify-content: space-between; */
+}
+
+.detail-section-product3 {
+  /* style={{
+    width: "30vw",
+    backgroundColor: "rgba(100, 112, 188, 255)",
+    height: "60vh",
+    borderRadius: "10px",
+    color: "white",
+    display: "flex",
+    flexDirection: "column",
+    textAlign: "center",
+    justifyContent: "center",
+  }} */
+  width: 30vw;
+  background-color: rgba(100, 112, 188, 255);
+  height: 60vh;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 
 .offer-image {
@@ -288,6 +310,11 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+}
+.offer-image-3 {
+  /* style={{ height: "30vh", width: "20vw" }} */
+  height: 30vh;
+  width: 20vw;
 }
 
 /* secondslider */
@@ -329,7 +356,7 @@
   perspective: 100px;
 }
 .sliding-banner-img2 {
-  width:30vw;
+  width: 30vw;
   height: 50vh;
   transition: transform 1s;
   border-radius: 10px;
@@ -367,4 +394,213 @@
   background-color: black;
   color: white;
   margin-top: 10vh;
+}
+
+.vishamikanda {
+  /* style={{ fontSize: "30px", fontStyle: "italic" }} */
+  font-size: 30px;
+  font-style: italic;
+  /* fon */
+}
+.section-font-4 {
+  /* style={{ color: "yellow", fontSize: "3vh" }} */
+  color: yellow;
+  font-size: 3vh;
+}
+.detail-section-product2-div {
+  display: flex;
+}
+.offer-image33 {
+  height: 30vh;
+  margin-left: -20px;
+  width: 20vw;
+}
+
+.shop-header {
+  /* style={{ fontStyle: "bold", fontSize: "9vh" }}
+   */
+  /* font-style:; */
+  font-size: 9vh;
+}
+.footer-div-style {
+  display: flex;
+  flex-direction: column;
+  font-weight: bolder;
+}
+.shopfont-style {
+  margin-top: 10px;
+  color: yellow;
+}
+.location-button {
+  border-radius: 10px;
+}
+.contact-details{
+
+   display: flex;
+   flex-direction: column;
+   font-weight: bolder;
+   height: 55%;
+   gap:0.5vh
+  
+   /* justify-content: space-between; */
+}
+.whatsapplogo{
+  color: green;
+  font-size: 1.6vh;
+}
+.instagramLogo{
+  
+  color: RGB(193, 53, 132) ;
+  font-size: 1.6vh;
+}
+/* media query */
+
+@media (max-width: 700px) {
+  .header-navigation {
+    /* background-color: blue; */
+    /* margin: 10%; */
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .banner-section {
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    height: 45vh;
+  }
+  .banner-font-section {
+    width: 70%;
+  }
+  .vishamikanda {
+    /* font-size: ; */
+    font-size: 2dvh;
+  }
+  .banner-image {
+    height: 35vh;
+    width: 80vw;
+    /* margin-left: 1px; */
+    padding-left: 30vw;
+  }
+  .detail-section {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    /* gap: 8vh; */
+    height: 100vh;
+  }
+  .detail-section-product1 {
+    width: 80vw;
+    margin-top: -3vh;
+    height: 30vh;
+    align-items: center;
+  }
+  .offer-image {
+    height: 20vh;
+    width: 40vw;
+  }
+  .offer-content1 {
+    font-size: 2.3vh;
+  }
+  .detail-section-product2 {
+    width: 80vw;
+    height: 30vh;
+  }
+  .detail-section-product3 {
+    width: 80vw;
+    height: 30vh;
+    align-items: center;
+  }
+  .section-font-2 {
+    font-size: 2vh;
+  }
+  .section-font-3 {
+    font-size: 2.3vh;
+  }
+  .section-font-4 {
+    font-size: 2.2vh;
+  }
+  .offer-image-3 {
+    /* height: 70vh; */
+    width: 30vw;
+  }
+  .sliding-banner-header1 {
+    font-size: 2vh;
+  }
+  .sliding-banner-header2 {
+    font-size: 2vh;
+  }
+  .sliding-banner-img {
+    margin-top: -10vh;
+    height: 6vh;
+  }
+  .sliding-banner {
+    height: 20vh;
+  }
+
+  .detail-section-product2 {
+    justify-content: center;
+    align-items: center;
+  }
+  .detail-section-product2-div {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .offer-image2 {
+    width: 40vw;
+  }
+  .offer-image33 {
+    height: 20vh;
+    width: 30vw;
+  }
+  .offer-content2 {
+    font-size: 2vh;
+  }
+  .shop-header {
+    font-size: 5vh;
+  }
+
+  /* .clothing-section{
+
+} */
+  .clothing-section-content {
+    height: 10vh;
+  }
+  .sliding-banner-img2 {
+    height: 28vh;
+    margin-top: -4vh;
+    width: 39vw;
+  }
+  .slider2 {
+    height: 35vh;
+    /* margin: auto; */
+    position: relative;
+    width: 100%;
+  }
+  .footer {
+    height: 25vh;
+    margin-top: -1vh;
+  }
+  .slide2 {
+    height: 30vh;
+  }
+
+  .footer-div-style {
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+/* background-color: blue; */
+justify-content: center;
+align-items: center;
+text-align: center;
+  }
+  .shopfont-style {
+    /* margin-top: 10px; */
+    color: yellow;
+
+  }
+  .location-button {
+    border-radius: 10px;
+    width: 30vw;
+  }
 }

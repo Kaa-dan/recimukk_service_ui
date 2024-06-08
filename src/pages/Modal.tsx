@@ -11,7 +11,7 @@ const customStyles: Modal.Styles = {
     right: "auto",
     bottom: "auto",
     marginRight: "-50%",
-    height: "70vh",
+    height: "75vh",
     width: "60vw",
     overflow: "hidden",
     transform: "translate(-50%, -50%)",
@@ -89,10 +89,11 @@ const ModalComponent: React.FC = () => {
               fontWeight: "bold",
               color: "yellow",
               padding: "15px",
-              textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)" 
+              textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
             }}
           >
             <span>Anniversary Offer</span>
+            <h1 style={{ fontSize: "4vh" }}>june 10 - 17</h1>
             {/* <h1
               style={{ fontSize: "4vh", color: "orange", fontWeight: "bold",textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)"  }}
             >
@@ -152,10 +153,20 @@ const ModalComponent: React.FC = () => {
                   color: "yellow",
                   fontSize: "2vh",
                   fontWeight: "bold",
-                  textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
+                  textShadow: "1px 1px 2px rgba(0, 0, 0, 0.9)",
                 }}
               >
-                1 രൂപക്ക് Tshirt, Shoes, Flip, etc........
+                <h1
+                  style={{
+                    color: "red",
+                    fontWeight: "bold",
+                    fontSize: "3vh",
+                    textShadow: "1px 1px 2px rgba(0, 0, 0, 0.9)",
+                  }}
+                >
+                  1 ₹{" "}
+                </h1>{" "}
+                Tshirt, Shoes, Flip, etc........
               </span>
             </div>
           </div>
