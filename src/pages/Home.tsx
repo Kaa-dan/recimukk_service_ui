@@ -300,7 +300,7 @@ const Home = () => {
           </span>
         </div>
 
-        <div>
+        <div className="recimukk">
           <span>© 2024, Recy_mukk.</span>
         </div>
       </footer>
