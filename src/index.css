@@ -605,4 +605,17 @@
   .recimukk {
     font-size: 1vh;
   }
+  .call-button {
+    width: 15vw;
+
+    margin-left: -60px;
+    padding: 2px;
+    font-size: 10px;
+  }
+  .banner-header1,
+  .banner-header2-span,
+  .banner-header2,
+  .banner-header2-span {
+    z-index: 1;
+  }
 }

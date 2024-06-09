@@ -159,7 +159,7 @@ const Home = () => {
             {/* <CiUser /> */}
             {/* <CiSearch />
             <FaOpencart /> */}
-            <button className="call-button blink_me2">Contact now</button>
+            <button className="call-button">Contact now</button>
           </div>
         </div>
       </header>

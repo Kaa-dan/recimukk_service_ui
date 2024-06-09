@@ -4,6 +4,7 @@ import shoeImage from "../assets/modelImage/shoe.png";
 import tshirtImage from "../assets/modelImage/tshirt.png";
 import bgSale from "../assets/modelImage/bgsale.png";
 import { ImCancelCircle } from "react-icons/im";
+
 const customStyles: Modal.Styles = {
   content: {
     top: "50%",
@@ -17,11 +18,10 @@ const customStyles: Modal.Styles = {
     transform: "translate(-50%, -50%)",
     backgroundColor: "transparent",
     border: "none",
-    // border:"1px green solid"
     padding: "0",
   },
   overlay: {
-    backgroundColor: "rgba(0, 0, 0, 0)", // Make the overlay transparent
+    backgroundColor: "rgba(0, 0, 0, 0)",
   },
 };
 
@@ -30,11 +30,20 @@ Modal.setAppElement("#root");
 const ModalComponent: React.FC = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [hasOpenedAutomatically, setHasOpenedAutomatically] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 700);
   const subtitle = useRef<HTMLHeadingElement | null>(null);
 
-  //   function openModal() {
-  //     setIsOpen(true);
-  //   }
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 700);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   function afterOpenModal() {
     if (subtitle.current) {
@@ -53,7 +62,7 @@ const ModalComponent: React.FC = () => {
         setHasOpenedAutomatically(true);
       }, 4000);
 
-      return () => clearTimeout(timer); // Clean up the timeout on component unmount
+      return () => clearTimeout(timer);
     }
   }, [hasOpenedAutomatically]);
 
@@ -68,24 +77,27 @@ const ModalComponent: React.FC = () => {
       >
         <div style={{ backgroundColor: "transparent" }}>
           <ImCancelCircle
-            style={{ color: "red", fontSize: "4vh", backgroundColor: "white" }}
+            style={{
+              color: "red",
+              fontSize: isMobile ? "2vh" : "4vh",
+              backgroundColor: "white",
+            }}
             onClick={() => closeModal()}
           />
         </div>
 
-        {/* <h2 ref={subtitle}>Hello</h2> */}
         <div
           style={{
             textAlign: "center",
             backgroundColor: "green",
             border: "none",
             display: "flex",
-            flexDirection: "column",
+            flexDirection: isMobile ? "column" : "column",
           }}
         >
           <div
             style={{
-              fontSize: "3vh",
+              fontSize: isMobile ? "1vh" : "3vh",
               fontWeight: "bold",
               color: "yellow",
               padding: "15px",
@@ -93,17 +105,14 @@ const ModalComponent: React.FC = () => {
             }}
           >
             <span>Anniversary Offer</span>
-            <h1 style={{ fontSize: "4vh" }}>june 10 - 17</h1>
-            {/* <h1
-              style={{ fontSize: "4vh", color: "orange", fontWeight: "bold",textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)"  }}
-            >
-              {" "} 
-              Call 8075391294
-            </h1> */}
+            <h1 style={{ fontSize: isMobile ? "3vh" : "4vh" }}>June 10 - 17</h1>
           </div>
-          <div style={{ display: "flex" }}>
-            {/* <img style={{ height: "35vh" }} src={limitedOffer} alt="" />
-            <img style={{ height: "35vh" }} src={saleImage} alt="" /> */}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: isMobile ? "column" : "row",
+            }}
+          >
             <div
               style={{
                 display: "flex",
@@ -113,27 +122,34 @@ const ModalComponent: React.FC = () => {
               }}
             >
               <img
-                style={{ height: "30vh", width: "25vw" }}
+                style={{
+                  height: isMobile ? "15vh" : "30vh",
+                  width: isMobile ? "30vw" : "25vw",
+                }}
                 src={bgSale}
                 alt=""
               />
               <img
                 src={tshirtImage}
                 style={{
-                  height: "25vh",
-                  width: "15vw",
-                  //   transform: "rotate(-90deg)", // Rotates the image by 30 degrees
+                  height: isMobile ? "10vh" : "25vh",
+                  width: isMobile ? "30vw" : "15vw",
                 }}
                 alt=""
               />
             </div>
 
-            <div style={{ display: "flex", flexDirection: "column" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: isMobile ? "row" : "column",
+              }}
+            >
               <img
                 style={{
-                  height: "35vh",
-                  width: "30vw",
-                  boxShadow: "10px 10px 20px rgba(0, 0, 0, 0.5)",
+                  height: isMobile ? "15vh" : "35vh",
+                  width: isMobile ? "20vw" : "30vw",
+                  // boxShadow: "10px 10px 20px rgba(0, 0, 0, 0.5)",
                 }}
                 src={shoeImage}
                 alt=""
@@ -141,33 +157,30 @@ const ModalComponent: React.FC = () => {
               <h2
                 style={{
                   color: "yellow",
-                  fontSize: "3vh",
+                  fontSize: isMobile ? "2vh" : "3vh",
                   fontWeight: "bolder",
                   textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
                 }}
               >
-                അന്നേ ദിവസങ്ങളിൽ നേടൂ
+                അന്നേ ദിവസങ്ങളിൽ നേടൂ 1 ₹ Tshirt, Shoes, Flip, etc........
               </h2>
-              <span
+              {/* <h1
                 style={{
                   color: "yellow",
-                  fontSize: "2vh",
+                  fontSize: isMobile ? "1.5vh" : "2vh",
                   fontWeight: "bold",
                   textShadow: "1px 1px 2px rgba(0, 0, 0, 0.9)",
+                  
                 }}
-              >
-                <h1
-                  style={{
-                    color: "red",
-                    fontWeight: "bold",
-                    fontSize: "3vh",
-                    textShadow: "1px 1px 2px rgba(0, 0, 0, 0.9)",
-                  }}
-                >
-                  1 ₹{" "}
-                </h1>{" "}
-                Tshirt, Shoes, Flip, etc........
-              </span>
+              > */}
+              <h1
+                style={{
+                  color: "red",
+                  fontWeight: "bold",
+                  fontSize: isMobile ? "2vh" : "3vh",
+                  textShadow: "1px 1px 2px rgba(0, 0, 0, 0.9)",
+                }}
+              ></h1>
             </div>
           </div>
         </div>
