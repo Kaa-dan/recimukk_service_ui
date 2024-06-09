@@ -618,4 +618,7 @@
   .banner-header2-span {
     z-index: 1;
   }
+  .banner-header2-span{
+    background-color: yellow;
+  }
 }
