@@ -19,7 +19,7 @@ const customStyles: Modal.Styles = {
     backgroundColor: "transparent",
     border: "none",
     padding: "0",
-    zIndex:"4"
+    zIndex:"1"
   },
   overlay: {
     backgroundColor: "rgba(0, 0, 0, 0)",

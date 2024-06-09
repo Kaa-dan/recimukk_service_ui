@@ -616,7 +616,7 @@
   .banner-header2-span,
   .banner-header2,
   .banner-header2-span {
-    z-index: 1;
+    z-index: 4;
   }
   .banner-header2-span{
     color: yellow;
