@@ -159,7 +159,7 @@ const Home = () => {
             {/* <CiUser /> */}
             {/* <CiSearch />
             <FaOpencart /> */}
-            <a href="tel:+7907444987">
+            <a href="tel:+917907444987">
               {" "}
               <button className="call-button">Contact now</button>
             </a>
