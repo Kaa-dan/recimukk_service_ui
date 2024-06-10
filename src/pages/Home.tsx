@@ -159,7 +159,10 @@ const Home = () => {
             {/* <CiUser /> */}
             {/* <CiSearch />
             <FaOpencart /> */}
-            <button className="call-button">Contact now</button>
+            <a href="tel:+7907444987">
+              {" "}
+              <button className="call-button">Contact now</button>
+            </a>
           </div>
         </div>
       </header>
@@ -175,9 +178,12 @@ const Home = () => {
           </div>
           <div className="banner-header3">
             <h3 className="vishamikanda">വിഷമിക്കണ്ട 😉</h3>
-            <button className="banner-button blink_me">
-              Click for service
-            </button>{" "}
+            <a href="https://wa.me/7907444987?text=Hi" target="_blank">
+              {" "}
+              <button className="banner-button blink_me">
+                Click for service
+              </button>
+            </a>{" "}
           </div>
         </div>
         <div>
@@ -267,35 +273,43 @@ const Home = () => {
           <h2>shop</h2>
           <div className="shopfont-style">
             <span>Karamana</span>
-            <button className="location-button">
+            <a href="https://g.co/kgs/sRF2zSw">
               {" "}
-              <CiLocationOn />
-              Location
-            </button>
+              <button className="location-button">
+                {" "}
+                <CiLocationOn />
+                Location
+              </button>
+            </a>
           </div>
           <div className="shopfont-style">
-            <span>Attukal {" "}</span>
-            <button className="location-button">
+            <span>Attukal </span>
+            <a href="https://maps.app.goo.gl/jcS1x9oCJ4FySZUc7">
               {" "}
-              <CiLocationOn />
-              Location
-            </button>
+              <button className="location-button">
+                {" "}
+                <CiLocationOn />
+                Location
+              </button>
+            </a>
           </div>
         </div>
 
-        <div
-        className="contact-details"
-        
-        >
+        <div className="contact-details">
           <h2>Contact</h2>
           <span> 7907444987</span>
+          <a href="https://wa.me/7907444987?text=Hi" target="_blank">
+            {" "}
+            <a href="https://www.instagram.com/recy_mukk/">
+              {" "}
+              <span className="whatsapplogo">
+                <FaWhatsappSquare />
+                Whatsapp
+              </span>
+            </a>
+          </a>
 
-          <span className="whatsapplogo" >
-            <FaWhatsappSquare />
-            <span> Whatsapp</span>
-          </span>
-
-          <span className="instagramLogo" >
+          <span className="instagramLogo">
             <GrInstagram /> Instagram
           </span>
         </div>
