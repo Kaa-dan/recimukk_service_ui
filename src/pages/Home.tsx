@@ -300,18 +300,17 @@ const Home = () => {
           <span> 7907444987</span>
           <a href="https://wa.me/7907444987?text=Hi" target="_blank">
             {" "}
-            <a href="https://www.instagram.com/recy_mukk/">
-              {" "}
-              <span className="whatsapplogo">
-                <FaWhatsappSquare />
-                Whatsapp
-              </span>
-            </a>
+            <span className="whatsapplogo">
+              <FaWhatsappSquare />
+              Whatsapp
+            </span>
           </a>
-
-          <span className="instagramLogo">
-            <GrInstagram /> Instagram
-          </span>
+          <a href="https://www.instagram.com/recy_mukk/">
+            {" "}
+            <span className="instagramLogo">
+              <GrInstagram /> Instagram
+            </span>
+          </a>
         </div>
 
         <div className="recimukk">
