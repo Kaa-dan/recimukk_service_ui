@@ -477,10 +477,11 @@
     font-size: 2dvh;
   }
   .banner-image {
-    height: 35vh;
+    height: 25vh;
     width: 80vw;
     /* margin-left: 1px; */
-    padding-left: 30vw;
+    padding-left: 50vw;
+    /* z-index: -1; */
   }
   .detail-section {
     display: flex;
@@ -617,7 +618,7 @@
     font-size: 10px;
   }
 
-  .banner-header2-span{
+  .banner-header2-span {
     color: yellow;
   }
 }
