@@ -65,6 +65,7 @@
   align-items: center;
   border: 1px solid rgba(83, 112, 188, 255);
   /* overflow: hidden; */
+  /* z-index: -2; */
 }
 
 .banner-image {
@@ -90,10 +91,12 @@
   font-style: italic;
   /* font-size: 34px; */
   font-size: 2vw;
+  /* z-index: -1; */
 }
 .banner-header2-span {
   color: white;
   font-style: italic;
+  /* z-index: -1; */
 }
 .banner-header2 {
   color: rgba(255, 229, 0, 255);
@@ -102,6 +105,7 @@
   font-size: 4vw;
   font-weight: bolder;
   /* line-height: 15vh; */
+  /* z-index: -1; */
 }
 
 .banner-header3 {
@@ -612,12 +616,7 @@
     padding: 2px;
     font-size: 10px;
   }
-  .banner-header1,
-  .banner-header2-span,
-  .banner-header2,
-  .banner-header2-span {
-    z-index: 4;
-  }
+
   .banner-header2-span{
     color: yellow;
   }
